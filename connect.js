@@ -16,9 +16,7 @@ const socket = new WebSocket("wss://my-websocket-sasi.glitch.me/");
 
 // Connection opened
 socket.addEventListener("open", (event) => {
-//   socket.send("<<Someone>> Joined");
-  messageDisplay.innerHTML  = '<h3>Connected...</h3>';
-  
+  messageDisplay.innerHTML = 'You will not see past messages';
   sendButton.addEventListener('click', () => {
     const message = messageInput.value.trim();
 
